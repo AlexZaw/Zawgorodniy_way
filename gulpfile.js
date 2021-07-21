@@ -43,12 +43,13 @@ exports.svgstack = svgstack;
 const copy = () => gulp.src([
   'source/fonts/*.{woff,woff2}',
   'source/*.ico',
-  'source/manifest.webmanifest',
 ],
-{allowEmpty: true},
 {
   base: 'source',
-}).pipe(gulp.dest('build'));
+})
+  .pipe(gulp.src('source/manifest.webmanifest', {allowEmpty: true}))
+  .pipe(gulp.dest('build'));
+
 
 exports.copy = copy;
 
@@ -87,7 +88,6 @@ exports.optimizeImages = optimizeImages;
 const createWebp = () => gulp.src([
   'source/img/**/*.{jpg,png}',
   '!source/img/favicons/*',
-  '!source/img/common/map-pin.png',
 ])
   .pipe(webp({ quality: 90 }))
   .pipe(gulp.dest('build/img'));
