@@ -1,0 +1,47 @@
+.page-grid {
+  position: fixed;
+  display: grid;
+  box-sizing: border-box;
+  max-width: 1200px;
+  opacity: 0.3;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: -1;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.page-grid__col {
+  height: 100%;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.page-pixel {
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // opacity: 0.3;
+  // z-index: -1;
+  // background: url(../../img/desktop.jpg);
+  // background: url(../../img/desktop-invert.jpg);
+}
+
+.page__body {
+  margin: 0;
+  background: var(--bg-basic);
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--c-text-primary);
+}
+
+.page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

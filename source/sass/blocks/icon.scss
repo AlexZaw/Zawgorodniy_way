@@ -1,0 +1,14 @@
+.icon {
+  position: relative;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: var(--icon-color);
+}
