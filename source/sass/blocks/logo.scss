@@ -1,0 +1,10 @@
+.logo img {
+  width: 57px;
+  height: 22px;
+  vertical-align: middle;
+
+  @media (max-width: 1023px) {
+    width: 44px;
+    height: 17px;
+  }
+}
