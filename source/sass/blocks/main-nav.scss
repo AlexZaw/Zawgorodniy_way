@@ -2,7 +2,6 @@
   justify-self: end;
   font-size: 14px;
   font-weight: 500;
-  background-color: var(--bg-basic);
 
   @media (max-width: 1023px) {
     position: absolute;
@@ -61,6 +60,8 @@
 }
 
 .main-nav__links {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
 

@@ -10,6 +10,7 @@
   mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;
+  --icon-color: var(--c-text-primary);
   background-color: var(--icon-color);
   transition: background-color 0.1s;
 }

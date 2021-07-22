@@ -1,0 +1,30 @@
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  font-size: 14px;
+  color: var(--c-text-secondary-50);
+}
+
+.page-footer__wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.77;
+  color: var(--c-text-secondary);
+}
+
+.page-footer__wrapper section:not(:last-child) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--c-footer-icon);
+  }
+}
