@@ -11,7 +11,10 @@
 
 .footer-contacts__link {
   color: var(--c-footer-link);
-  margin-bottom: 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
 
   &:hover::before {
     --icon-color: currentColor;
@@ -32,11 +35,16 @@
     mask-image: url("../../img/stack.svg#email");
   }
 
-  &--phone::before {
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-    mask-image: url("../../img/stack.svg#phone");
+  &--phone {
+    font-size: 16px;
+    line-height: 2;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+      margin-right: 11px;
+      mask-image: url("../../img/stack.svg#phone");
+    }
   }
 }
 
