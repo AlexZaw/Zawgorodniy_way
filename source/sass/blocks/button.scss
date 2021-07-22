@@ -1,0 +1,13 @@
+.button {
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background-color: var(--bg-button);
+  transition: background-color 0.1s;
+
+  &:hover,
+  &:focus-within,
+  &:active {
+    background-color: var(--bg-button-hover);
+  }
+}

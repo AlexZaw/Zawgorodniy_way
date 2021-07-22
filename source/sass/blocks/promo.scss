@@ -1,0 +1,52 @@
+.promo {
+  min-height: 860px;
+  background-image: url(../../img/promo/hero.jpg);
+  background-color: var(--bg-promo);
+}
+
+.promo__item {
+  position: absolute;
+  top: 185px;
+  right: 73px;
+  max-width: 412px;
+}
+
+.promo h1 {
+  margin-top: 0;
+  margin-bottom: 31px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -1.11px;
+  color: var(--c-text-promo);
+}
+
+.promo p {
+  max-width: 376px;
+  line-height: 170%;
+  letter-spacing: -0.47px;
+  color: var(--c-text-promo);
+}
+
+.promo__button {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  max-width: 340px;
+  width: 100%;
+  margin-top: 16px;
+  padding: 30px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--c-text-promo);
+
+  &::before {
+    right: 40px;
+    width: 14px;
+    height: 14px;
+    --icon-color: currentColor;
+    mask-image: url("../../img/stack.svg#arrow-btn");
+  }
+}

@@ -11,25 +11,16 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     justify-items: center;
-    // grid-auto-flow: initial;
   }
 }
 
 .upcoming-trips-list__item {
   &--column-1 {
     grid-column: 1;
-
-    // @media (max-width: 767px) {
-    //   grid-column: auto;
-    // }
   }
 
   &--column-2 {
     grid-column: 2;
-
-    // @media (max-width: 767px) {
-    //   grid-column: auto;
-    // }
   }
 
   &--column-3 {
@@ -37,8 +28,6 @@
 
     @media (max-width: 767px) {
       grid-column: 1/-1;
-      // justify-self: center;
-      // grid-row: 2;
     }
   }
 }

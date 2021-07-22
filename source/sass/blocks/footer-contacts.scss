@@ -16,7 +16,8 @@
     margin-bottom: 21px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus-within::before {
     --icon-color: currentColor;
   }
 

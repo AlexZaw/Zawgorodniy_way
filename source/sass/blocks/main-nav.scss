@@ -26,9 +26,6 @@
   position: relative;
   width: 72px;
   height: 50px;
-  padding: 0;
-  border: none;
-  background-color: var(--bg-button);
 
   &--hidden {
     visibility: hidden;
@@ -86,7 +83,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     color: var(--c-text-hover);
   }
 
@@ -102,7 +99,7 @@
 
     &--arrow {
       &:hover::before,
-      &:focus::before {
+      &:focus-within::before {
         --icon-color: currentColor;
       }
 
