@@ -1,14 +1,71 @@
 .promo {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+}
+
+.promo__bg {
+  box-sizing: border-box;
+  grid-row: 1;
+  grid-column: 1 / -1;
   min-height: 860px;
-  background-image: url(../../img/promo/hero.jpg);
+  background-image: url("../../img/promo/promo-desktop.jpg");
   background-color: var(--bg-promo);
+
+  @media (max-width: 1023px) {
+    min-height: 344px;
+    background-image: url("../../img/promo/promo-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 1px;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 235px;
+  }
+}
+
+.promo__wrapper {
+  display: grid;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  justify-self: end;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    display: contents;
+  }
 }
 
 .promo__item {
-  position: absolute;
-  top: 185px;
-  right: 73px;
+  justify-self: end;
   max-width: 412px;
+  margin-top: 185px;
+  margin-right: 58px;
+
+  @media (max-width: 1023px) {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    display: contents;
+  }
+}
+
+.promo__item-wrapper {
+  padding: 0;
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    padding: 0 16px;
+  }
 }
 
 .promo h1 {
@@ -19,6 +76,24 @@
   line-height: 1.45;
   letter-spacing: -1.11px;
   color: var(--c-text-promo);
+
+  @media (max-width: 1023px) {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: normal;
+  }
+
+  @media (max-width: 767px) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    max-width: 300px;
+    margin-top: 81px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
 }
 
 .promo p {
@@ -26,12 +101,20 @@
   line-height: 170%;
   letter-spacing: -0.47px;
   color: var(--c-text-promo);
+
+  @media (max-width: 1023px) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    color: var(--c-text-primary);
+  }
 }
 
 .promo__button {
   display: inline-block;
   vertical-align: middle;
-  box-sizing: border-box;
   max-width: 340px;
   width: 100%;
   margin-top: 16px;
@@ -48,5 +131,20 @@
     height: 14px;
     --icon-color: currentColor;
     mask-image: url("../../img/stack.svg#arrow-btn");
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 250px;
+    margin-top: 8px;
+    padding: 19px 40px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 288px;
+    margin-top: 20px;
   }
 }
