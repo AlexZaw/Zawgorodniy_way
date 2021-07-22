@@ -116,7 +116,6 @@ const devStyles = () => gulp.src('source/sass/style.scss')
       assetsPath: '../',
     }),
     autoprefixer(),
-    csso(),
   ]))
   .pipe(rename('style.min.css'))
   .pipe(sourcemap.write('.'))
@@ -160,7 +159,7 @@ const scripts = () => gulp.src('source/js/*.js')
 exports.scripts = scripts;
 
 const concatJs = () => gulp.src('source/js/concat/*.js')
-  .pipe(concat('app.min.js'))
+  .pipe(concat('scripts.min.js'))
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
 
