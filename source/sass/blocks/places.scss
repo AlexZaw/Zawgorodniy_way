@@ -1,0 +1,30 @@
+.places {
+  padding-top: 200px;
+}
+
+.places h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -1.25px;
+  color: var(--c-text-title);
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 31px;
+    width: 228px;
+    height: 4px;
+    background: var(--bg-button);
+  }
+}
+
+.places__footnote {
+  max-width: 328px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.47px;
+  color: var(--c-text-primary);
+}
