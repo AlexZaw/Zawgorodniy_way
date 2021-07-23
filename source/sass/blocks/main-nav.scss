@@ -148,13 +148,9 @@
     display: initial;
     grid-column: 1 / -1;
     max-width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     min-height: auto;
-  }
-}
-
-.no-js .main-nav__links {
-  @media (max-width: 1023px) {
-    display: block;
   }
 }
 

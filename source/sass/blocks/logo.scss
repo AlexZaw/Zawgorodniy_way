@@ -8,3 +8,13 @@
     height: 17px;
   }
 }
+
+.no-js .logo {
+  @media (max-width: 1023px) {
+    margin-left: 21px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 16px;
+  }
+}
