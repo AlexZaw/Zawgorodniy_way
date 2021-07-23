@@ -78,6 +78,11 @@
     &--header {
       padding-right: 0;
     }
+
+    &--places {
+      padding-left: 76px;
+      padding-right: 76px;
+    }
   }
 
   @media (max-width: 767px) {

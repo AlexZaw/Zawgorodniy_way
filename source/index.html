@@ -47,8 +47,8 @@
       </div>
     </section>
     <section class="places">
-      <div class="page__container">
-        <h2>Места<br>посещения</h2>
+      <div class="page__container page__container--places">
+        <h2>Места <br class="places__header-line-break">посещения</h2>
         <p class="places__footnote">
           Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
         </p>
@@ -56,7 +56,21 @@
           <li class="places-list__item">
             <a class="places-list__card" href="#">
               <div class="places-list__safari-fix">
-                <img src="./img/places/greece.jpg" width="350" height="430" alt="Здания на вершине горы">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/places/greece@1x.webp 1x,
+                  ./img/places/greece@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="./img/places/mobile/greece-mobile@1x.webp 1x,
+                  ./img/places/mobile/greece-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/places/mobile/greece-mobile@1x.jpg 1x,
+                  ./img/places/mobile/greece-mobile@2x.jpg 2x">
+                    <img src="./img/places/greece@1x.jpg"
+                    srcset="./img/places/greece@2x.jpg 2x"
+                    width="350" height="430"
+                    alt="Здания на вершине горы">
+                </picture>
               </div>
               <span>Греция</span>
             </a>
@@ -64,8 +78,21 @@
           <li class="places-list__item">
             <a class="places-list__card" href="#">
               <div class="places-list__safari-fix">
-                <img src="./img/places/albania.jpg" width="350" height="430"
-                  alt="Вид городка на пляже с высоты птичьего полета">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/places/albania@1x.webp 1x,
+                  ./img/places/albania@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="./img/places/mobile/albania-mobile@1x.webp 1x,
+                  ./img/places/mobile/albania-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/places/mobile/albania-mobile@1x.jpg 1x,
+                  ./img/places/mobile/albania-mobile@2x.jpg 2x">
+                    <img src="./img/places/albania@1x.jpg"
+                    srcset="./img/places/albania@2x.jpg 2x"
+                    width="350" height="430"
+                    alt="Вид городка на пляже с высоты птичьего полета">
+                </picture>
               </div>
               <span>Албания</span>
             </a>
@@ -73,8 +100,21 @@
           <li class="places-list__item">
             <a class="places-list__card" href="#">
               <div class="places-list__safari-fix">
-                <img src="./img/places/macedonia.jpg" width="350" height="430"
-                  alt="На фонем моря старый кирпичный храм на возвышенности">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/places/macedonia@1x.webp 1x,
+                  ./img/places/macedonia@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="./img/places/mobile/macedonia-mobile@1x.webp 1x,
+                  ./img/places/mobile/macedonia-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/places/mobile/macedonia-mobile@1x.jpg 1x,
+                  ./img/places/mobile/macedonia-mobile@2x.jpg 2x">
+                    <img src="./img/places/macedonia@1x.jpg"
+                    srcset="./img/places/macedonia@2x.jpg 2x"
+                    width="350" height="430"
+                    alt="На фонем моря старый кирпичный храм на возвышенности">
+                </picture>
               </div>
               <span>Македония</span>
             </a>
@@ -82,8 +122,21 @@
           <li class="places-list__item">
             <a class="places-list__card" href="#">
               <div class="places-list__safari-fix">
-                <img src="./img/places/montenegro.jpg" width="350" height="430"
-                  alt="Русло горной реки берега которой утопают в зелени">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/places/montenegro@1x.webp 1x,
+                  ./img/places/montenegro@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="./img/places/mobile/montenegro-mobile@1x.webp 1x,
+                  ./img/places/mobile/montenegro-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/places/mobile/montenegro-mobile@1x.jpg 1x,
+                  ./img/places/mobile/montenegro-mobile@2x.jpg 2x">
+                    <img src="./img/places/montenegro@1x.jpg"
+                    srcset="./img/places/montenegro@2x.jpg 2x"
+                    width="350" height="430"
+                    alt="Русло горной реки берега которой утопают в зелени">
+                </picture>
               </div>
               <span>Черногория</span>
             </a>
@@ -91,8 +144,21 @@
           <li class="places-list__item">
             <a class="places-list__card" href="#">
               <div class="places-list__safari-fix">
-                <img src="./img/places/сroatia.jpg" width="350" height="430"
-                  alt="Красочная пещера с небольшим водоемом">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/places/сroatia@1x.webp 1x,
+                  ./img/places/сroatia@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="./img/places/mobile/сroatia-mobile@1x.webp 1x,
+                  ./img/places/mobile/сroatia-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                  srcset="./img/places/mobile/сroatia-mobile@1x.jpg 1x,
+                  ./img/places/mobile/сroatia-mobile@2x.jpg 2x">
+                    <img src="./img/places/сroatia@1x.jpg"
+                    srcset="./img/places/сroatia@2x.jpg 2x"
+                    width="350" height="430"
+                    alt="Красочная пещера с небольшим водоемом">
+                </picture>
               </div>
               <span>Хорватия</span>
             </a>
