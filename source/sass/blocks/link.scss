@@ -1,0 +1,12 @@
+.link {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition: color 0.1s;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-within {
+    color: var(--c-link-hover);
+  }
+}

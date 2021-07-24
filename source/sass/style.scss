@@ -1,6 +1,7 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./blocks/page.scss";
+@import "./blocks/link.scss";
 @import "./blocks/button.scss";
 @import "./blocks/icon.scss";
 @import "./blocks/page-header.scss";
@@ -10,6 +11,11 @@
 @import "./blocks/places.scss";
 @import "./blocks/places-list.scss";
 @import "./blocks/places-card.scss";
+@import "./blocks/tabs.scss";
+@import "./blocks/tabs-titles.scss";
+@import "./blocks/tabs-list.scss";
+@import "./blocks/tab-card.scss";
+@import "./blocks/review.scss";
 @import "./blocks/upcoming-trips.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/footer-contacts.scss";

@@ -1,0 +1,64 @@
+.tab-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+.tab-card h2 {
+  margin-top: 58px;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.63;
+  letter-spacing: -1.25px;
+  color: var(--c-text-title);
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 14px;
+    width: 175px;
+    height: 4px;
+    background: var(--bg-button);
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+
+.tab-card__description {
+  max-width: 370px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: -0.47px;
+}
+
+.tab-card__button {
+  display: inline-block;
+  margin-top: 35px;
+  min-width: 250px;
+}
+
+.tab-card__testimonials {
+  display: grid;
+  margin-left: 67px;
+  padding-top: 48px;
+}
+
+.tab-card__photo {
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.tab-card__photo img {
+  vertical-align: middle;
+}
+
+.tab-card__review {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  justify-self: end;
+  align-self: center;
+}

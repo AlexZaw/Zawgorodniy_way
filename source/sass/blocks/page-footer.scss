@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   font-size: 14px;
-  color: var(--c-text-secondary-50);
+  color: var(--c-text-footer);
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr 1fr;
@@ -57,5 +57,11 @@
 .page-footer__wrapper section:not(:first-child)::after {
   @media (max-width: 1023px) {
     display: none;
+  }
+}
+
+.page-footer__corporate-trip {
+  @media (max-width: 1023px) {
+    grid-column: 1 / -1;
   }
 }

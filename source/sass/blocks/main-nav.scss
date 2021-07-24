@@ -72,19 +72,10 @@
 }
 
 .main-nav__link {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
   color: var(--c-text-secondary);
-  transition: color 0.1s;
 
   &:not(:first-child) {
     margin-left: 35px;
-  }
-
-  &:hover,
-  &:focus-within {
-    color: var(--c-text-hover);
   }
 
   @media (max-width: 1023px) {
