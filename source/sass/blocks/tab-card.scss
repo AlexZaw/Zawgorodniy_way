@@ -2,9 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 20px;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.tab-card h2 {
+.tab-card__info {
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+}
+
+.tab-card__info h2 {
   margin-top: 58px;
   margin-bottom: 30px;
   font-size: 55px;
@@ -25,6 +35,20 @@
       display: none;
     }
   }
+
+  @media (max-width: 1023px) {
+    margin-top: 14px;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: normal;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 }
 
 .tab-card__description {
@@ -33,27 +57,68 @@
   font-weight: 400;
   line-height: 1.75;
   letter-spacing: -0.47px;
+
+  @media (max-width: 1023px) {
+    max-width: none;
+  }
 }
 
 .tab-card__button {
   display: inline-block;
-  margin-top: 35px;
-  min-width: 250px;
+  margin-top: 34px;
+  max-width: 250px;
+  letter-spacing: 1.8px;
+
+  @media (max-width: 1023px) {
+    margin-top: 2px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 288px;
+  }
 }
 
 .tab-card__testimonials {
   display: grid;
   margin-left: 67px;
   padding-top: 48px;
+
+  @media (max-width: 1023px) {
+    margin-left: -21px;
+    margin-right: -21px;
+    padding-top: 29px;
+    padding-bottom: 32px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-top: 50px;
+  }
 }
 
 .tab-card__photo {
   grid-row: 1;
   grid-column: 1 / -1;
+
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+  }
 }
 
 .tab-card__photo img {
   vertical-align: middle;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    height: 415px;
+    object-fit: cover;
+    object-position: left bottom;
+  }
 }
 
 .tab-card__review {
@@ -61,4 +126,14 @@
   grid-column: 1 / -1;
   justify-self: end;
   align-self: center;
+
+  @media (max-width: 1023px) {
+    justify-self: center;
+    align-self: end;
+    margin-bottom: -32px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 51px;
+  }
 }

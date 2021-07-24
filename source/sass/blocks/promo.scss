@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-.promo__bg {
+.promo::before {
+  content: "";
+  display: block;
   box-sizing: border-box;
   grid-row: 1;
   grid-column: 1 / -1;
@@ -22,6 +24,7 @@
 
   @media (max-width: 767px) {
     min-height: 235px;
+    background-position-x: 51%;
   }
 }
 
@@ -114,9 +117,9 @@
 .promo__button {
   display: inline-block;
   vertical-align: middle;
-  max-width: 340px;
-  width: 100%;
   margin-top: 16px;
+  max-width: 340px;
+  text-align-last: left;
 
   &::before {
     right: 40px;
@@ -127,17 +130,12 @@
   }
 
   @media (max-width: 1023px) {
-    max-width: 250px;
     margin-top: 9px;
-    padding: 19px 40px;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-align: left;
+    max-width: 250px;
   }
 
   @media (max-width: 767px) {
-    max-width: 288px;
     margin-top: 20px;
+    max-width: 288px;
   }
 }

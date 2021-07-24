@@ -24,6 +24,7 @@
 
 .main-nav__control {
   position: relative;
+  padding: 17px 25px;
   width: 72px;
   height: 50px;
 
@@ -32,6 +33,7 @@
   }
 
   &::before {
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 28px;
     height: 15px;

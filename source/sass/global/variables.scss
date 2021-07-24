@@ -1,4 +1,6 @@
 :root {
+  --scrollbar-size: calc(100vw - 100%);
+
   --bg-basic: hsla(0 0% 100% / 1);
   --bg-promo: hsla(206 31% 48% / 1);
   --bg-card-hover: hsla(234 8% 9% / 0.6);
