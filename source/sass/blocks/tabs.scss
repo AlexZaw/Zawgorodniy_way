@@ -1,3 +1,17 @@
 .tabs {
+  position: relative;
   padding-top: 11px;
+}
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -507px;
+  right: 0;
+  z-index: -1;
+  background: url(../../img/bg-map.svg);
+  background-repeat: no-repeat;
+  background-position: center 145px;
 }
