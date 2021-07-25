@@ -1,8 +1,11 @@
 .button {
   box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
   border: none;
   padding: 30px 40px;
   width: 100%;
+  max-width: 250px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -19,9 +22,22 @@
     background-color: var(--bg-button-hover);
   }
 
+  &--promo {
+    max-width: 340px;
+  }
+
+  &--rates {
+    max-width: 310px;
+  }
+
   @media (max-width: 1023px) {
     padding: 19px 40px;
+    max-width: 250px;
     font-size: 10px;
     font-weight: 500;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 288px;
   }
 }

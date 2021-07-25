@@ -64,17 +64,11 @@
 }
 
 .tab-card__button {
-  display: inline-block;
   margin-top: 34px;
-  max-width: 250px;
   letter-spacing: 1.8px;
 
   @media (max-width: 1023px) {
     margin-top: 2px;
-  }
-
-  @media (max-width: 767px) {
-    max-width: 288px;
   }
 }
 

@@ -1,0 +1,117 @@
+.rates-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px 30px 30px;
+  max-width: 370px;
+  box-shadow: inset 0 0 0 1px var(--bd-rates-card);
+  border-radius: 6px;
+  transition: box-shadow 0.1s;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: inset 0 0 0 3px var(--c-link-hover);
+
+    .rates-card__header {
+      color: var(--c-link-hover);
+    }
+
+    h3 {
+      letter-spacing: normal;
+    }
+
+    .rates-card__info::after {
+      background-color: var(--c-link-hover);
+    }
+
+    .rates-card__item::before {
+      --icon-color: currentColor;
+    }
+  }
+}
+
+.rates-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  color: var(--c-rates-card-header);
+  transition: color 0.1s;
+}
+
+.rates-card h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -1.27px;
+  transition: letter-spacing 0.1s;
+
+  @media (max-width: 1170px) {
+    font-size: 24px;
+  }
+}
+
+.rates-card__price {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -1.27px;
+
+  @media (max-width: 1170px) {
+    font-size: 24px;
+  }
+}
+
+.rates-card__info {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--c-text-title);
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 27px;
+    width: 100%;
+    height: 1px;
+    transition: background-color 0.1s;
+    background-color: var(--bd-rates-card);
+  }
+}
+
+.rates-card__list {
+  margin-top: 15px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.rates-card__item {
+  font-size: 16px;
+  line-height: 2;
+  padding-left: 30px;
+
+  &::before {
+    top: 0.6875em;
+    left: 0;
+    transform: none;
+    width: 14px;
+    height: 12px;
+    margin-right: 16px;
+    --icon-color: var(--c-link-hover);
+    mask-image: url("../../img/stack.svg#check");
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.rates-card__button {
+  margin-top: auto;
+}

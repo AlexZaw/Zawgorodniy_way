@@ -115,11 +115,8 @@
 }
 
 .promo__button {
-  display: inline-block;
-  vertical-align: middle;
   margin-top: 16px;
-  max-width: 340px;
-  text-align-last: left;
+  text-align: left;
 
   &::before {
     right: 40px;
@@ -131,11 +128,9 @@
 
   @media (max-width: 1023px) {
     margin-top: 9px;
-    max-width: 250px;
   }
 
   @media (max-width: 767px) {
     margin-top: 20px;
-    max-width: 288px;
   }
 }

@@ -1,0 +1,60 @@
+.prices-info h3 {
+  margin-top: 12px;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.63;
+  color: var(--c-text-title);
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 14px;
+    width: 175px;
+    height: 3px;
+    background: var(--bg-button);
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.prices-info__text {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.prices-info__contacts {
+  margin-top: 60px;
+  text-align: center;
+  color: var(--c-text-secondary);
+}
+
+.prices-info__contacts-text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.54;
+}
+
+.prices-info__link {
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--c-text-secondary);
+
+  &--phone {
+    &::before {
+      left: -52px;
+      width: 30px;
+      height: 30px;
+      --icon-color: var(--c-link-hover);
+      mask-image: url("../../img/stack.svg#phone");
+    }
+  }
+}
