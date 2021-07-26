@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-modal-overlay);
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.modal__close {
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &::before {
+    top: 0;
+    right: 0;
+    transform: none;
+    width: 22px;
+    height: 22px;
+    --icon-color: var(--c-text-secondary);
+    mask-image: url("../../img/stack.svg#close-menu");
+  }
+}
+
+.modal__form-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  width: 100%;
+  max-width: 728px;
+  color: var(--c-text-modal);
+  background-image: url("../../img/modal/modal-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.modal__form {
+  box-sizing: border-box;
+  justify-self: end;
+  padding-top: 72px;
+  padding-bottom: 89px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 390px;
+  text-align: center;
+  background-color: var(--bg-modal);
+
+  @media (max-width: 767px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.modal fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal__form legend {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 170%;
+}
+
+.modal__input-wrapper {
+  position: relative;
+
+  &::before {
+    content: "*";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: var(--c-link-hover);
+  }
+}
+
+.modal__form input {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  max-width: 270px;
+  font-size: 14px;
+  border: 1px solid var(--bd-form-input);
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--c-text-secondary);
+  }
+
+  @media (max-width: 767px) {
+    max-width: none;
+  }
+}
+
+.modal__email {
+  padding-left: 15px;
+}
+
+.modal__phone {
+  padding-left: 26px;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:hover,
+  &:focus {
+    appearance: auto;
+
+    &::-webkit-inner-spin-button {
+      appearance: inner-spin-button;
+    }
+  }
+}

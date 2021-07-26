@@ -29,8 +29,15 @@
   // Page form
   --bd-form-input: hsla(234 18% 21% / 0.3);
   --bg-form-mobile: hsla(345 27% 98% / 1);
+
   // Footer
   --c-text-footer: hsla(234 8% 9% / 0.5);
   --c-footer-link: hsla(7deg 99% 70% / 0.7);
   --c-footer-icon: hsla(225 11% 86% / 1);
+
+  // Modal
+  --bd-modal-input: hsla(225 11% 86% / 1);
+  --bg-modal: hsla(0 27% 98% / 1);
+  --bg-modal-overlay: hsla(234 8% 9% / 0.6);
+  --c-text-modal: hsla(228 3% 29% / 1);
 }

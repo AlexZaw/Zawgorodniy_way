@@ -288,7 +288,8 @@
             <form class="main-form__form" name="main-form" action="#" method="POST">
               <label for="main-form-phone" class="page__a11y-hidden">Введите номер телефона</label>
               <div class="main-form__input-wrapper">
-                <input class="main-form__phone" id="main-form-phone" type="number" name="user-phone" placeholder="+7 Введите 10 цифр номера" required>
+                <input class="main-form__phone" id="main-form-phone" type="number" name="user-phone"
+                  placeholder="+7 Введите 10 цифр номера" required>
               </div>
               <label for="main-form-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
               <input class="main-form__email" id="main-form-email" type="email" name="user-email" placeholder="E-mail">
@@ -359,7 +360,34 @@
       </div>
     </div>
   </footer>
-  <div class="page-pixel"></div>
+  <div class="modal modal--hidden">
+    <div class="modal__form-wrapper">
+      <button class="icon modal__close" type="button">
+        <span class="page__a11y-hidden">Закрыть модальное окно</span>
+      </button>
+      <form class="modal__form" action="#" name="buy-tour" method="POST">
+        <fieldset>
+          <legend>Купить тур</legend>
+          <label for="modal-phone" class="page__a11y-hidden">Введите номер телефона</label>
+          <div class="modal__input-wrapper">
+            <input class="modal__phone" id="modal-phone" type="number" name="user-phone"
+              placeholder="+7 Введите 10 цифр номера" required>
+          </div>
+          <label for="modal-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
+          <input class="modal__email" id="modal-email" type="email" name="user-email" placeholder="E-mail">
+          <button class="button button--modal" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="success-message success-message--hidden">
+    <div class="success-message-wrapper">
+      <button class="icon success-message__close" type="button">
+        <span class="page__a11y-hidden">Закрыть модальное окно</span>
+      </button>
+      <span>Форма успешно отправлена,<br> спасибо! :)</span>
+    </div>
+  </div>
   <div class="page-grid">
     <div class="page-grid__col"></div>
     <div class="page-grid__col"></div>
