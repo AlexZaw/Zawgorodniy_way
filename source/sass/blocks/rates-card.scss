@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 40px 30px 30px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   max-width: 370px;
   box-shadow: inset 0 0 0 1px var(--bd-rates-card);
   border-radius: 6px;
@@ -28,6 +31,18 @@
       --icon-color: currentColor;
     }
   }
+
+  @media (max-width: 1023px) {
+    padding-top: 32px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-radius: 6px 6px 0 0;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+  }
 }
 
 .rates-card__header {
@@ -38,6 +53,11 @@
   margin-bottom: 22px;
   color: var(--c-rates-card-header);
   transition: color 0.1s;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .rates-card h3 {
@@ -52,16 +72,24 @@
   @media (max-width: 1170px) {
     font-size: 24px;
   }
+
+  @media (max-width: 767px) {
+    line-height: 1.58;
+  }
 }
 
 .rates-card__price {
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -1.27px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.36;
 
   @media (max-width: 1170px) {
     font-size: 24px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 10px;
+    font-size: 25px;
   }
 }
 
@@ -78,6 +106,25 @@
     height: 1px;
     transition: background-color 0.1s;
     background-color: var(--bd-rates-card);
+
+    @media (max-width: 1023px) {
+      margin-top: 8px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+    .line-break {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
   }
 }
 
@@ -85,6 +132,10 @@
   margin-top: 15px;
   padding-left: 0;
   list-style-type: none;
+
+  @media (max-width: 1023px) {
+    margin-top: 5px;
+  }
 }
 
 .rates-card__item {
@@ -93,22 +144,42 @@
   padding-left: 30px;
 
   &::before {
-    top: 0.6875em;
+    top: 0.5em;
     left: 0;
     transform: none;
     width: 14px;
     height: 12px;
-    margin-right: 16px;
     --icon-color: var(--c-link-hover);
     mask-image: url("../../img/stack.svg#check");
+
+    @media (max-width: 1023px) {
+      left: 20px;
+    }
   }
 
   &:not(:last-child) {
     margin-bottom: 15px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 10px;
+    }
   }
 
   &:last-child {
     margin-bottom: 30px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 27px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding-left: 50px;
+    padding-right: 20px;
   }
 }
 

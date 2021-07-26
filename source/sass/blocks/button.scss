@@ -26,10 +26,6 @@
     max-width: 340px;
   }
 
-  &--rates {
-    max-width: 310px;
-  }
-
   @media (max-width: 1023px) {
     padding: 19px 40px;
     max-width: 250px;
@@ -39,5 +35,13 @@
 
   @media (max-width: 767px) {
     max-width: 288px;
+  }
+
+  &--rates {
+    max-width: 310px;
+
+    @media (max-width: 1023px) {
+      max-width: 288px;
+    }
   }
 }

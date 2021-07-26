@@ -1,3 +1,12 @@
+.prices-info {
+  padding-left: 4px;
+
+  @media (max-width: 1023px) {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
 .prices-info h3 {
   margin-top: 12px;
   margin-bottom: 30px;
@@ -9,7 +18,7 @@
   &::after {
     content: "";
     display: block;
-    margin-top: 14px;
+    margin-top: 16px;
     width: 175px;
     height: 3px;
     background: var(--bg-button);
@@ -19,8 +28,14 @@
     }
   }
 
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 150%;
+  }
+
   @media (max-width: 767px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -33,12 +48,26 @@
   margin-top: 60px;
   text-align: center;
   color: var(--c-text-secondary);
+
+  @media (max-width: 1023px) {
+    margin-top: 34px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .prices-info__contacts-text {
   font-size: 22px;
   font-weight: 500;
   line-height: 1.54;
+
+  @media (max-width: 1023px) {
+    display: block;
+    font-size: 18px;
+    line-height: 1.88;
+  }
 }
 
 .prices-info__link {
@@ -55,6 +84,17 @@
       height: 30px;
       --icon-color: var(--c-link-hover);
       mask-image: url("../../img/stack.svg#phone");
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
     }
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.77;
+    color: var(--c-link-hover);
   }
 }

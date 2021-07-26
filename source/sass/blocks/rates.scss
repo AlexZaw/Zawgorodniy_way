@@ -1,14 +1,31 @@
 .rates {
-  padding-top: 202px;
+  padding-top: 11.42%;
+
+  @media (max-width: 1023px) {
+    padding-top: 6.81%;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 4.7%;
+  }
 }
 
 .rates__wrapper {
   display: grid;
   column-gap: 7.69%;
   grid-template-columns: 2.48fr 1fr;
+  padding-top: 16px;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .rates__info {
-  padding-left: 4px;
-  margin-top: 118px;
+  margin-top: 100px;
+
+  @media (max-width: 1023px) {
+    order: -1;
+    margin-top: 0;
+  }
 }

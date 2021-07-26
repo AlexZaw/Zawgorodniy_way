@@ -1,9 +1,24 @@
 .rates-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // column-gap: 20px;
   column-gap: 30px;
-  // column-gap: 3.896%;
   padding-left: 0;
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: 1023px) {
+    column-gap: 50px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+    padding-top: 38px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
