@@ -7,9 +7,9 @@
 }
 
 .tabs-list__item {
-  // visibility: hidden;
+  display: none;
 }
 
-.tabs-list__item--active{
-
+.tabs-list__item--active {
+  display: block;
 }
