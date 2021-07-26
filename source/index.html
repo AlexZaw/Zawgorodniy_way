@@ -17,10 +17,10 @@
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__links">
             <li class="link main-nav__link main-nav__link--arrow icon">
-              <a href="#">О путешествии</a>
+              <a href="#places">О путешествии</a>
             </li>
             <li class="link main-nav__link main-nav__link--arrow icon">
-              <a href="#">Цены</a>
+              <a href="#rates">Цены</a>
             </li>
             <li class="link main-nav__link main-nav__link--phone icon">
               <a href="tel:+749978468446">+7&nbsp;(499)&nbsp;-784-684-46</a>
@@ -41,13 +41,13 @@
               В этом туре вы откроете для себя Европу в новом свете.
               Вас ждет: море, горы, а также потрясающая красота природы.
             </p>
-            <a href="#" class="button button--promo promo__button icon">Смотреть тур</a>
+            <a href="#tabs" class="button button--promo promo__button icon">Смотреть тур</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="places">
+    <section class="places" id="places">
       <div class="page__container page__container--places">
         <h2>Места <br class="line-break">посещения</h2>
         <p class="places__footnote">
@@ -101,7 +101,7 @@
                   <source media="(max-width: 1023px)" srcset="./img/places/mobile/macedonia-mobile@1x.jpg 1x,
                   ./img/places/mobile/macedonia-mobile@2x.jpg 2x">
                   <img src="./img/places/macedonia-desktop@1x.jpg" srcset="./img/places/macedonia-desktop@2x.jpg 2x"
-                    width="350" height="430" alt="На фонем моря старый кирпичный храм на возвышенности">
+                    width="350" height="430" alt="На фоне моря старый кирпичный храм на возвышенности">
                 </picture>
               </div>
               <span class="places-card__country">Македония</span>
@@ -130,13 +130,13 @@
             <a class="places-card" href="#">
               <div class="places-card__overlay places-list__safari-fix">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="./img/places/сroatia-desktop@1x.webp 1x,
-                  ./img/places/сroatia-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/places/mobile/сroatia-mobile@1x.webp 1x,
-                  ./img/places/mobile/сroatia-mobile@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/places/mobile/сroatia-mobile@1x.jpg 1x,
-                  ./img/places/mobile/сroatia-mobile@2x.jpg 2x">
-                  <img src="./img/places/сroatia-desktop@1x.jpg" srcset="./img/places/сroatia-desktop@2x.jpg 2x"
+                  <source type="image/webp" media="(min-width: 1024px)" srcset="./img/places/croatia-desktop@1x.webp 1x,
+                  ./img/places/croatia-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/places/mobile/croatia-mobile@1x.webp 1x,
+                  ./img/places/mobile/croatia-mobile@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/places/mobile/croatia-mobile@1x.jpg 1x,
+                  ./img/places/mobile/croatia-mobile@2x.jpg 2x">
+                  <img src="./img/places/croatia-desktop@1x.jpg" srcset="./img/places/croatia-desktop@2x.jpg 2x"
                     width="350" height="430" alt="Красочная пещера с небольшим водоемом">
                 </picture>
               </div>
@@ -148,7 +148,7 @@
       </div>
     </section>
 
-    <section class="tabs">
+    <section class="tabs" id="tabs">
       <h2 class="page__a11y-hidden">Описание туров</h2>
       <div class="page__container">
         <div class="tabs__titles-wrapper">
@@ -171,7 +171,7 @@
           </ul>
         </div>
         <ul class="tabs-list">
-          <li class="tabs-list__item">
+          <li class="tabs-list__item tabs-list__item--active">
             <article class="tabs-list__card tab-card">
               <div class="tab-card__info">
                 <h2>Греция</h2>
@@ -210,13 +210,209 @@
                   <div class="review__author-info">
                     <div class="review__author-photo">
                       <picture>
-                        <source type="image/webp" srcset="./img/review/review-author@1x.webp 1x,
-                        ./img/review/review-author@2x.webp 2x">
-                        <img src="./img/review/review-author@1x.jpg" srcset="./img/review/review-author@2x.jpg 2x"
-                          width="64" height="81" alt="Здания на вершине горы">
+                        <source type="image/webp" srcset="./img/review/review-author-greece@1x.webp 1x,
+                        ./img/review/review-author-greece@2x.webp 2x">
+                        <img src="./img/review/review-author-greece@1x.jpg"
+                          srcset="./img/review/review-author-greece@2x.jpg 2x" width="64" height="81" alt="Фото автора">
                       </picture>
                     </div>
                     <span class="review__author-name">Влада Голицина</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="tabs-list__item">
+            <article class="tabs-list__card tab-card">
+              <div class="tab-card__info">
+                <h2>Албания</h2>
+                <p class="tab-card__description">
+                  В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем.
+                  Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный
+                  песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
+                  состояния.
+                </p>
+                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+              </div>
+              <div class="tab-card__testimonials">
+                <div class="tab-card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/tabs/albania-tab-desktop@1x.webp 1x,
+                    ./img/tabs/albania-tab-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 767px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.webp 1x,
+                    ./img/tabs/greece-tab-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/tabs/mobile/greece-tab-mobile@1x.webp 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.jpg 1x,
+                    ./img/tabs/tablet/greece-tab-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
+                    <img src="./img/tabs/albania-tab-desktop@1x.jpg" srcset="./img/tabs/albania-tab-desktop@2x.jpg 2x"
+                      width="430" height="596" alt="Вид городка на пляже с высоты птичьего полета">
+                  </picture>
+                </div>
+                <div class="tab-card__review review">
+                  <h3>Отзывы</h3>
+                  <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с
+                    собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                  <div class="review__author-info">
+                    <div class="review__author-photo">
+                      <picture>
+                        <source type="image/webp" srcset="./img/review/review-author-albania@1x.webp 1x,
+                        ./img/review/review-author-albania@2x.webp 2x">
+                        <img src="./img/review/review-author-albania@1x.jpg"
+                          srcset="./img/review/review-author-albania@2x.jpg 2x" width="64" height="81"
+                          alt="Фото автора">
+                      </picture>
+                    </div>
+                    <span class="review__author-name">Маришка</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="tabs-list__item">
+            <article class="tabs-list__card tab-card">
+              <div class="tab-card__info">
+                <h2>Македония</h2>
+                <p class="tab-card__description">
+                  В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой
+                  местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
+                  Камен где находится археологический памятник Кокино в длину около 100 метров.
+                </p>
+                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+              </div>
+              <div class="tab-card__testimonials">
+                <div class="tab-card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/tabs/macedonia-tab-desktop@1x.webp 1x,
+                    ./img/tabs/macedonia-tab-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 767px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.webp 1x,
+                    ./img/tabs/greece-tab-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/tabs/mobile/greece-tab-mobile@1x.webp 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.jpg 1x,
+                    ./img/tabs/tablet/greece-tab-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
+                    <img src="./img/tabs/macedonia-tab-desktop@1x.jpg"
+                      srcset="./img/tabs/macedonia-tab-desktop@2x.jpg 2x" width="430" height="596"
+                      alt="На фоне моря старый кирпичный храм на возвышенности">
+                  </picture>
+                </div>
+                <div class="tab-card__review review">
+                  <h3>Отзывы</h3>
+                  <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем
+                    в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила,
+                    особенно после долгого пути в гору.</p>
+                  <div class="review__author-info">
+                    <div class="review__author-photo">
+                      <picture>
+                        <source type="image/webp" srcset="./img/review/review-author-macedonia@1x.webp 1x,
+                        ./img/review/review-author-macedonia@2x.webp 2x">
+                        <img src="./img/review/review-author-macedonia@1x.jpg"
+                          srcset="./img/review/review-author-macedonia@2x.jpg 2x" width="64" height="81"
+                          alt="Фото автора">
+                      </picture>
+                    </div>
+                    <span class="review__author-name">Михаил Кузьмин</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="tabs-list__item">
+            <article class="tabs-list__card tab-card">
+              <div class="tab-card__info">
+                <h2>Черногория</h2>
+                <p class="tab-card__description">
+                  Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
+                  берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
+                </p>
+                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+              </div>
+              <div class="tab-card__testimonials">
+                <div class="tab-card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/tabs/montenegro-tab-desktop@1x.webp 1x,
+                    ./img/tabs/montenegro-tab-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 767px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.webp 1x,
+                    ./img/tabs/greece-tab-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/tabs/mobile/greece-tab-mobile@1x.webp 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.jpg 1x,
+                    ./img/tabs/tablet/greece-tab-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
+                    <img src="./img/tabs/montenegro-tab-desktop@1x.jpg"
+                      srcset="./img/tabs/montenegro-tab-desktop@2x.jpg 2x" width="430" height="596"
+                      alt="Русло горной реки берега которой утопают в зелени">
+                  </picture>
+                </div>
+                <div class="tab-card__review review">
+                  <h3>Отзывы</h3>
+                  <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
+                    фильмах :) Всем советую</p>
+                  <div class="review__author-info">
+                    <div class="review__author-photo">
+                      <picture>
+                        <source type="image/webp" srcset="./img/review/review-author-montenegro@1x.webp 1x,
+                        ./img/review/review-author-montenegro@2x.webp 2x">
+                        <img src="./img/review/review-author-montenegro@1x.jpg"
+                          srcset="./img/review/review-author-montenegro@2x.jpg 2x" width="64" height="81"
+                          alt="Фото автора">
+                      </picture>
+                    </div>
+                    <span class="review__author-name">Анастасия Мей</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="tabs-list__item">
+            <article class="tabs-list__card tab-card">
+              <div class="tab-card__info">
+                <h2>Хорватия</h2>
+                <p class="tab-card__description">
+                  В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти
+                  метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
+                  сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
+                </p>
+                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+              </div>
+              <div class="tab-card__testimonials">
+                <div class="tab-card__photo">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="./img/tabs/croatia-tab-desktop@1x.webp 1x,
+                    ./img/tabs/croatia-tab-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 767px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.webp 1x,
+                    ./img/tabs/greece-tab-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/tabs/mobile/greece-tab-mobile@1x.webp 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tabs/tablet/greece-tab-tablet@1x.jpg 1x,
+                    ./img/tabs/tablet/greece-tab-tablet@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
+                    ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
+                    <img src="./img/tabs/croatia-tab-desktop@1x.jpg" srcset="./img/tabs/croatia-tab-desktop@2x.jpg 2x"
+                      width="430" height="596" alt="Красочная пещера с небольшим водоемом">
+                  </picture>
+                </div>
+                <div class="tab-card__review review">
+                  <h3>Отзывы</h3>
+                  <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А
+                    то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур
+                    ни с чем не спутать по итогу :)</p>
+                  <div class="review__author-info">
+                    <div class="review__author-photo">
+                      <picture>
+                        <source type="image/webp" srcset="./img/review/review-author-croatia@1x.webp 1x,
+                        ./img/review/review-author-croatia@2x.webp 2x">
+                        <img src="./img/review/review-author-croatia@1x.jpg"
+                          srcset="./img/review/review-author-croatia@2x.jpg 2x" width="64" height="81"
+                          alt="Фото автора">
+                      </picture>
+                    </div>
+                    <span class="review__author-name">Владимир Мулицин</span>
                   </div>
                 </div>
               </div>
@@ -226,7 +422,7 @@
       </div>
     </section>
 
-    <section class="rates">
+    <section class="rates" id="rates">
       <h2 class="page__a11y-hidden">Тарифы</h2>
       <div class="page__container">
         <div class="rates__wrapper">
