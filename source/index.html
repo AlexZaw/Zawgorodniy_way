@@ -30,6 +30,7 @@
       </div>
     </div>
   </header>
+
   <main>
     <section class="promo">
       <div class="page__container promo__wrapper">
@@ -45,6 +46,7 @@
         </div>
       </div>
     </section>
+
     <section class="places">
       <div class="page__container page__container--places">
         <h2>Места <br class="line-break">посещения</h2>
@@ -145,6 +147,7 @@
         </ul>
       </div>
     </section>
+
     <section class="tabs">
       <h2 class="page__a11y-hidden">Описание туров</h2>
       <div class="page__container">
@@ -222,6 +225,7 @@
         </ul>
       </div>
     </section>
+
     <section class="rates">
       <h2 class="page__a11y-hidden">Тарифы</h2>
       <div class="page__container">
@@ -272,7 +276,27 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="page-form">
+      <h2 class="page__a11y-hidden">Форма обратной связи</h2>
+      <div class="page__container">
+        <div class="page-form__wrapper">
+          <div class="main-form">
+            <span class="main-form__title">У Вас остались вопросы?</span>
+            <span class="main-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
+            <form class="main-form__form" name="main-form" action="#" method="POST">
+              <label for="main-form-phone" class="page__a11y-hidden">Введите номер телефона</label>
+              <div class="main-form__input-wrapper">
+                <input class="main-form__phone" id="main-form-phone" type="number" name="user-phone" placeholder="+7 Введите 10 цифр номера" required>
+              </div>
+              <label for="main-form-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
+              <input class="main-form__email" id="main-form-email" type="email" name="user-email" placeholder="E-mail">
+              <button class="button button--main-form main-form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

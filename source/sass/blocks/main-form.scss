@@ -1,0 +1,87 @@
+.main-form {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: var(--c-text-secondary);
+  background-color: var(--bg-basic);
+  min-height: 315px;
+}
+
+.main-form__form {
+  display: grid;
+  grid-template-columns: minmax(269px, 1fr) minmax(269px, 1fr);
+  column-gap: 19px;
+  row-gap: 25px;
+  margin-top: 22px;
+}
+
+.main-form__title {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.28;
+}
+
+.main-form__text {
+  margin-top: 11px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.main-form__button {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.main-form__input-wrapper {
+  position: relative;
+
+  &::before {
+    content: "*";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: var(--c-link-hover);
+  }
+}
+
+.main-form__form input {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid var(--bd-form-input);
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--c-text-secondary);
+  }
+}
+
+.main-form__email {
+  padding-left: 15px;
+}
+
+.main-form__phone {
+  padding-left: 26px;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:hover,
+  &:focus {
+    appearance: auto;
+
+    &::-webkit-inner-spin-button {
+      appearance: inner-spin-button;
+    }
+  }
+}

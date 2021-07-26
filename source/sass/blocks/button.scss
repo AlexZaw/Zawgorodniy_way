@@ -22,9 +22,6 @@
     background-color: var(--bg-button-hover);
   }
 
-  &--promo {
-    max-width: 340px;
-  }
 
   @media (max-width: 1023px) {
     padding: 19px 40px;
@@ -37,11 +34,21 @@
     max-width: 288px;
   }
 
+  &--promo {
+    max-width: 340px;
+  }
+
   &--rates {
     max-width: 310px;
 
     @media (max-width: 1023px) {
       max-width: 288px;
     }
+  }
+
+  &--main-form {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    max-width: 176px;
   }
 }

@@ -1,5 +1,4 @@
 :root {
-  --scrollbar-size: calc(100vw - 100%);
   // Common
   --bg-basic: hsla(0 0% 100% / 1);
   --bg-nav-link: hsla(345 27% 98% / 1);
@@ -27,6 +26,8 @@
   --bd-rates-card: hsla(234 18% 21% / 0.3);
   --c-rates-card-header: hsla(234 8% 9% / 0.7);
 
+  // Page form
+  --bd-form-input: hsla(234 18% 21% / 0.3);
   // Footer
   --c-text-footer: hsla(234 8% 9% / 0.5);
   --c-footer-link: hsla(7deg 99% 70% / 0.7);

@@ -61,14 +61,22 @@
 .page__body {
   display: grid;
   grid-template-rows: min-content 1fr  min-content;
+  margin: 0 auto;
+  padding-bottom: 74px;
   max-width: 1920px;
   min-height: 100%;
-  margin: 0 auto;
   font-size: 16px;
   font-family: "Montserrat", "Arial", sans-serif;
   background-color: var(--bg-basic);
   color: var(--c-text-primary);
-  // overflow-x: hidden;
+
+  @media (max-width: 1023px) {
+    padding-bottom: 54px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 26px;
+  }
 }
 
 // .page__body {
