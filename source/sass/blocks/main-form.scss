@@ -8,6 +8,16 @@
   color: var(--c-text-secondary);
   background-color: var(--bg-basic);
   min-height: 315px;
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: auto;
+    text-align: center;
+    background-color: transparent;
+  }
 }
 
 .main-form__form {
@@ -16,6 +26,16 @@
   column-gap: 19px;
   row-gap: 25px;
   margin-top: 22px;
+
+  @media (max-width: 1023px) {
+    row-gap: 20px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    margin-top: 19px;
+    width: 100%;
+  }
 }
 
 .main-form__title {
@@ -28,6 +48,10 @@
   margin-top: 11px;
   font-size: 16px;
   line-height: 150%;
+
+  @media (max-width: 767px) {
+    margin-top: 19px;
+  }
 }
 
 .main-form__button {

@@ -45,18 +45,20 @@
   }
 }
 
-// .page-pixel {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   // opacity: 0.3;
-//   z-index: -1;
-//   // background: url(../../img/desktop.jpg);
-//   background: url(../../img/desktop-invert.jpg);
-//   background-size: 100%;
-// }
+.page-pixel {
+  // position: fixed;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // opacity: 0.3;
+  // z-index: -1;
+  // z-index: 2;
+  // background: url(../../img/desktop.jpg);
+  // background: url(../../img/mobile-invert.jpg);
+  // background-size: 100%;
+}
 
 .page__body {
   display: grid;

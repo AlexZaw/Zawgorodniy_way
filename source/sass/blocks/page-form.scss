@@ -1,5 +1,13 @@
 .page-form {
   padding-top: 7.3%;
+
+  @media (max-width: 1023px) {
+    padding-top: 14.5%;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 15.5%;
+  }
 }
 
 .page-form__wrapper {
@@ -7,6 +15,23 @@
   align-items: center;
   justify-content: end;
   min-height: 455px;
-  background: url("../../img/form/page-form-bg.jpg");
+  background-image: url("../../img/form/page-form-bg.jpg");
   background-repeat: no-repeat;
+
+  @media (max-width: 1023px) {
+    justify-content: center;
+    margin-left: -21px;
+    margin-right: -21px;
+    background-image: url("../../img/form/tablet/page-form-tablet-bg.jpg");
+    background-size: cover;
+  }
+
+  @media (max-width: 767px) {
+
+    margin-left: -16px;
+    margin-right: -16px;
+    min-height: auto;
+    background-image: none;
+    background-color: var(--bg-form-mobile);
+  }
 }

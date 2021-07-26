@@ -47,8 +47,20 @@
   }
 
   &--main-form {
-    padding-top: 18px;
-    padding-bottom: 17px;
-    max-width: 176px;
+    @media (min-width: 1024px) {
+      padding-top: 18px;
+      padding-bottom: 17px;
+      max-width: 176px;
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      // max-width: 250px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    // max-width: 288px;
   }
 }

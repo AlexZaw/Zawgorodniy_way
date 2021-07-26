@@ -1,3 +1,15 @@
+.page-footer {
+  padding-top: 160px;
+
+  @media (max-width: 1023px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 25px;
+  }
+}
+
 .page-footer__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6,7 +18,8 @@
   color: var(--c-text-footer);
 
   @media (max-width: 1023px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(auto, 395px) auto;
+    column-gap: 34px;
     row-gap: 33px;
   }
 
@@ -51,6 +64,12 @@
         height: 1px;
       }
     }
+  }
+}
+
+.page-footer__wrapper .page-footer__corporate-trip {
+  @media (max-width: 1023px) {
+    padding-top: 25px;
   }
 }
 
