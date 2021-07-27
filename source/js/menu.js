@@ -8,4 +8,6 @@ const showHideMenu = () =>{
   menu.classList.toggle('main-nav--closed');
 };
 
-menuControl.addEventListener('click', showHideMenu);
+const onMobileMenuClick = () => menuControl.addEventListener('click', showHideMenu);
+
+export { onMobileMenuClick };

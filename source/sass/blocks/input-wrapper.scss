@@ -1,0 +1,13 @@
+.input-wrapper {
+  position: relative;
+
+  &--required {
+    &::before {
+      content: "*";
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      color: var(--c-link-hover);
+    }
+  }
+}

@@ -483,13 +483,17 @@
             <span class="main-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
             <form class="main-form__form" name="main-form" action="#" method="POST">
               <label for="main-form-phone" class="page__a11y-hidden">Введите номер телефона</label>
-              <div class="main-form__input-wrapper">
-                <input class="main-form__phone" id="main-form-phone" type="number" name="user-phone"
+              <div class="input-wrapper input-wrapper--required error-data">
+              <span class="error-data__message">Данные не верны</span>
+                <input class="main-form__phone" id="main-form-phone" type="tel" name="user-phone"
                   placeholder="+7 Введите 10 цифр номера" required>
               </div>
               <label for="main-form-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
+              <div class="input-wrapper error-data">
+                <span class="error-data__message">Данные не верны</span>
               <input class="main-form__email" id="main-form-email" type="email" name="user-email" placeholder="E-mail">
-              <button class="button button--main-form main-form__button" type="submit">Отправить</button>
+            </div>
+            <button class="button button--main-form main-form__button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -566,12 +570,16 @@
           <fieldset>
             <legend>Купить тур</legend>
             <label for="modal-phone" class="page__a11y-hidden">Введите номер телефона</label>
-            <div class="modal__input-wrapper">
-              <input class="modal__phone" id="modal-phone" type="number" name="user-phone"
+            <div class="input-wrapper input-wrapper--required error-data">
+              <span class="error-data__message">Данные не верны</span>
+              <input class="modal__phone" id="modal-phone" type="tel" name="user-phone"
                 placeholder="+7 Введите 10 цифр номера" required>
             </div>
             <label for="modal-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
+            <div class="input-wrapper error-data">
+              <span class="error-data__message">Данные не верны</span>
             <input class="modal__email" id="modal-email" type="email" name="user-email" placeholder="E-mail">
+              </div>
             <button class="button button--modal" type="submit">Отправить</button>
           </fieldset>
         </form>
@@ -603,7 +611,7 @@
     <div class="page-grid__col"></div>
     <div class="page-grid__col"></div>
   </div>
-  <script src="./js/scripts.min.js"></script>
+  <script src="./js/main.min.js" type="module"></script>
 </body>
 
 </html>

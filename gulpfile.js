@@ -150,7 +150,7 @@ exports.prodStyles = prodStyles;
 // JS minify
 
 const scripts = () => gulp.src('source/js/*.js')
-  .pipe(terser())
+  // .pipe(terser())
   .pipe(rename((path) => {
     path.basename += '.min';
   }))
@@ -191,7 +191,8 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(devStyles, copyImages));
   gulp.watch('source/img/icons/**/*.svg', gulp.series(svgstack, reload));
   gulp.watch('source/*.html', gulp.series(htmlCopy, copyImages, reload));
-  gulp.watch('source/js/**/*.js', gulp.series(scripts, concatJs, reload));
+  // gulp.watch('source/js/**/*.js', gulp.series(scripts, concatJs, reload));
+  gulp.watch('source/js/**/*.js', gulp.series(scripts, reload));
 };
 
 // Build
@@ -206,7 +207,7 @@ const build = gulp.series(
     html,
     prodStyles,
     scripts,
-    concatJs,
+    // concatJs,
   ),
 );
 exports.build = build;
@@ -223,7 +224,7 @@ const prodTest = gulp.series(
     html,
     prodStyles,
     scripts,
-    concatJs,
+    // concatJs,
   ),
   gulp.series(
     server,
@@ -244,7 +245,7 @@ exports.default = gulp.series(
     htmlCopy,
     devStyles,
     scripts,
-    concatJs,
+    // concatJs,
   ),
   gulp.series(
     server,

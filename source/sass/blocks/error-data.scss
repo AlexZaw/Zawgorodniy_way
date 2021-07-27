@@ -1,0 +1,18 @@
+.error-data__message {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: var(--c-error);
+  transition-property: top, opacity;
+  transition-duration: 0.1s, 0.1s;
+  opacity: 0;
+}
+
+.error-data--show .error-data__message {
+  top: -1.3em;
+  opacity: 1;
+}
+
+.error-data--show input {
+  border-color: var(--c-error);
+}
