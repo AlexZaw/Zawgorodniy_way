@@ -183,7 +183,7 @@
                   в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
                   царящая в монастырях Метеоры.
                 </p>
-                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+                <a class="button tab-card__button buy-tour" href="#">Купить тур сейчас</a>
               </div>
               <div class="tab-card__testimonials">
                 <div class="tab-card__photo">
@@ -232,7 +232,7 @@
                   песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
                   состояния.
                 </p>
-                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+                <a class="button tab-card__button buy-tour" href="#">Купить тур сейчас</a>
               </div>
               <div class="tab-card__testimonials">
                 <div class="tab-card__photo">
@@ -280,7 +280,7 @@
                   местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
                   Камен где находится археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+                <a class="button tab-card__button buy-tour" href="#">Купить тур сейчас</a>
               </div>
               <div class="tab-card__testimonials">
                 <div class="tab-card__photo">
@@ -329,7 +329,7 @@
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
                   берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+                <a class="button tab-card__button buy-tour" href="#">Купить тур сейчас</a>
               </div>
               <div class="tab-card__testimonials">
                 <div class="tab-card__photo">
@@ -378,7 +378,7 @@
                   метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
                   сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
                 </p>
-                <a class="button tab-card__button" href="#">Купить тур сейчас</a>
+                <a class="button tab-card__button buy-tour" href="#">Купить тур сейчас</a>
               </div>
               <div class="tab-card__testimonials">
                 <div class="tab-card__photo">
@@ -440,7 +440,7 @@
                 <li class="icon rates-card__item">Завтраки, ужины в отелях и ланчи на природе</li>
                 <li class="icon rates-card__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <a class="button button--rates rates-card__button" href="#">Купить тур сейчас</a>
+              <a class="button button--rates rates-card__button buy-tour" href="#">Купить тур сейчас</a>
             </li>
             <li class="rates-list__item rates-card">
               <div class="rates-card__header">
@@ -456,7 +456,7 @@
                 <li class="icon rates-card__item">Только завтраки в отелях</li>
                 <li class="icon rates-card__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <a class="button button--rates rates-card__button" href="#">Купить тур сейчас</a>
+              <a class="button button--rates rates-card__button buy-tour" href="#">Купить тур сейчас</a>
             </li>
           </ul>
           <div class="rates__info prices-info">
@@ -556,34 +556,39 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal--hidden">
-    <div class="modal__form-wrapper">
-      <button class="icon modal__close" type="button">
-        <span class="page__a11y-hidden">Закрыть модальное окно</span>
-      </button>
-      <form class="modal__form" action="#" name="buy-tour" method="POST">
-        <fieldset>
-          <legend>Купить тур</legend>
-          <label for="modal-phone" class="page__a11y-hidden">Введите номер телефона</label>
-          <div class="modal__input-wrapper">
-            <input class="modal__phone" id="modal-phone" type="number" name="user-phone"
-              placeholder="+7 Введите 10 цифр номера" required>
-          </div>
-          <label for="modal-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
-          <input class="modal__email" id="modal-email" type="email" name="user-email" placeholder="E-mail">
-          <button class="button button--modal" type="submit">Отправить</button>
-        </fieldset>
-      </form>
+  <template id="form-popup">
+    <div class="modal close-popup">
+      <div class="modal__form-wrapper">
+        <button class="icon modal__close close-popup" type="button">
+          <span class="page__a11y-hidden">Закрыть модальное окно</span>
+        </button>
+        <form class="modal__form" action="#" name="buy-tour" method="POST">
+          <fieldset>
+            <legend>Купить тур</legend>
+            <label for="modal-phone" class="page__a11y-hidden">Введите номер телефона</label>
+            <div class="modal__input-wrapper">
+              <input class="modal__phone" id="modal-phone" type="number" name="user-phone"
+                placeholder="+7 Введите 10 цифр номера" required>
+            </div>
+            <label for="modal-email" class="page__a11y-hidden">Введите адрес электронной почты</label>
+            <input class="modal__email" id="modal-email" type="email" name="user-email" placeholder="E-mail">
+            <button class="button button--modal" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="success-message success-message--hidden">
+  </template>
+<template id="success-message">
+  <div class="success-message close-popup">
     <div class="success-message-wrapper">
-      <button class="icon success-message__close" type="button">
+      <button class="icon success-message__close close-popup" type="button">
         <span class="page__a11y-hidden">Закрыть модальное окно</span>
       </button>
       <span>Форма успешно отправлена,<br> спасибо! :)</span>
     </div>
   </div>
+</template>
+
   <div class="page-grid">
     <div class="page-grid__col"></div>
     <div class="page-grid__col"></div>

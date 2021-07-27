@@ -7,7 +7,7 @@
   background: var(--bg-modal-overlay);
 
   &--hidden {
-    display: none;
+    // display: none;
   }
 }
 
@@ -17,6 +17,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
 
   &::before {
     top: 0;
