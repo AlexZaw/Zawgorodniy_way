@@ -13,6 +13,7 @@
   min-height: 860px;
   background-image: url("../../img/promo/promo-desktop.jpg");
   background-color: var(--bg-promo);
+  background-repeat: no-repeat;
 
   @media (max-width: 1023px) {
     min-height: 344px;

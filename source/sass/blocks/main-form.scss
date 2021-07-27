@@ -3,11 +3,13 @@
   justify-items: center;
   align-content: start;
   padding: 50px;
+  max-width: 656px;
+  min-height: 315px;
   box-sizing: border-box;
   border-radius: 5px;
+  text-align: center;
   color: var(--c-text-secondary);
   background-color: var(--bg-basic);
-  min-height: 315px;
 
   @media (max-width: 767px) {
     padding-top: 50px;
