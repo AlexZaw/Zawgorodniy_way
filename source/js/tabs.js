@@ -17,6 +17,7 @@ const changeTab = (evt) =>{
     const country = target.closest('[data-country]').dataset.country;
     if(target.closest('[data-country]').classList.contains(placeLinkClassName)){
       scrollToElement(tabsLinksParent);
+      tabsLinksParent.focus();
     }
     tabs.forEach((tab) => tab.classList.remove(tabActiveClassName));
     tabsLinks.forEach((link) => link.classList.remove(tabActiveLinkClassName));
