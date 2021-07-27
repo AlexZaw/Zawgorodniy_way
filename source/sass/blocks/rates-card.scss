@@ -33,6 +33,7 @@
   }
 
   @media (max-width: 1023px) {
+    align-items: center;
     padding-top: 32px;
     padding-left: 0;
     padding-right: 0;
@@ -162,10 +163,6 @@
 
     @media (max-width: 1023px) {
       margin-bottom: 10px;
-    }
-
-    @media (max-width: 767px) {
-      // margin-bottom: 9px;
     }
   }
 
