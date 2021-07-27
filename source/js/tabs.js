@@ -1,6 +1,5 @@
 import { scrollToElement } from './utils.min.js';
 const tabLinkClassName = 'tabs-titles__link';
-const placeLinkClassName = 'places-card';
 const tabActiveLinkClassName = 'tabs-titles__link--active';
 const tabClassName = 'tabs-list__item';
 const tabActiveClassName = 'tabs-list__item--active';
@@ -15,10 +14,6 @@ const changeTab = (evt) =>{
   const target = evt.target;
   try {
     const country = target.closest('[data-country]').dataset.country;
-    if(target.closest('[data-country]').classList.contains(placeLinkClassName)){
-      scrollToElement(tabsLinksParent);
-      tabsLinksParent.focus();
-    }
     tabs.forEach((tab) => tab.classList.remove(tabActiveClassName));
     tabsLinks.forEach((link) => link.classList.remove(tabActiveLinkClassName));
     tabsLinksParent.querySelector(`[data-country='${country}']`).classList.add(tabActiveLinkClassName);
