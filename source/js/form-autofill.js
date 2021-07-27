@@ -49,4 +49,4 @@ const onEmptyPhoneFocus = (form) =>{
 onEmptyPhoneFocus(mainForm);
 fillForm(mainForm);
 
-export { fillForm, isStorage };
+export { fillForm, isStorage, onEmptyPhoneFocus };

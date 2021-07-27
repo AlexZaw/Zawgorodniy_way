@@ -1,5 +1,5 @@
-import { setPhoneInputListener } from './form-check.min.js';
-import { fillForm } from './form-autofill.min.js';
+import { setPhoneInputListener, setEmailInputListener } from './form-check.min.js';
+import { fillForm, onEmptyPhoneFocus } from './form-autofill.min.js';
 import { onFormSubmit } from './form-submit.min.js';
 import { isEscKey } from './utils.min.js';
 
@@ -36,6 +36,8 @@ const showPopup = (template) => {
     const popupFormSubmitButton = form.querySelector('[type="submit"]');
     popupFormSubmitButton.addEventListener('click', onFormSubmit);
     setPhoneInputListener(form);
+    setEmailInputListener(form);
+    onEmptyPhoneFocus(form);
     phoneField.focus();
     fillForm(form);
   }
