@@ -15,14 +15,14 @@
   align-items: center;
   justify-content: end;
   min-height: 455px;
-  background-image: url("../../img/form/page-form-bg.jpg");
+  background-image: image-set(url("../../img/form/page-form-bg@2x.jpg") 2x, url("../../img/form/page-form-bg@1x.jpg") 1x);
   background-repeat: no-repeat;
 
   @media (max-width: 1023px) {
     justify-content: center;
     margin-left: -21px;
     margin-right: -21px;
-    background-image: url("../../img/form/tablet/page-form-tablet-bg.jpg");
+    background-image: image-set(url("../../img/form/tablet/page-form-tablet-bg@2x.jpg") 2x, url("../../img/form/tablet/page-form-tablet-bg@1x.jpg") 1x);
     background-size: cover;
   }
 

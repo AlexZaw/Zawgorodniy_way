@@ -12,6 +12,15 @@
   <link rel="preload" href="fonts/montserrat-v15-cyrillic-500.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/montserrat-v15-cyrillic-600.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/montserrat-v15-cyrillic-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" as="image" href="./img/promo/promo-desktop@2x.jpg" media="(min-width: 1024px) and (min-resolution: 2dppx)">
+  <link rel="preload" as="image" href="./img/promo/promo-desktop@1x.jpg" media="(min-width: 1024px) and (max-resolution: 1dppx)">
+  <link rel="preload" as="image" href="./img/promo/promo-tablet@2x.jpg" media="(max-width: 1023px) and (min-resolution: 2dppx)">
+  <link rel="preload" as="image" href="./img/promo/promo-tablet@1x.jpg" media="(max-width: 1023px) and (max-resolution: 1dppx)">
+  <link rel="preload" as="image" href="./img/bg-map.svg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Way. Путешествие по Европе</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -92,7 +101,7 @@
                   <source media="(max-width: 1023px)" srcset="./img/places/mobile/albania-mobile@1x.jpg 1x,
                   ./img/places/mobile/albania-mobile@2x.jpg 2x">
                   <img src="./img/places/albania-desktop@1x.jpg" srcset="./img/places/albania-desktop@2x.jpg 2x"
-                    width="350" height="430" alt="Вид городка на пляже с высоты птичьего полета">
+                    width="350" height="430" loading="lazy" alt="Вид городка на пляже с высоты птичьего полета">
                 </picture>
               </div>
               <span class="places-card__country">Албания</span>
@@ -110,7 +119,7 @@
                   <source media="(max-width: 1023px)" srcset="./img/places/mobile/macedonia-mobile@1x.jpg 1x,
                   ./img/places/mobile/macedonia-mobile@2x.jpg 2x">
                   <img src="./img/places/macedonia-desktop@1x.jpg" srcset="./img/places/macedonia-desktop@2x.jpg 2x"
-                    width="350" height="430" alt="На фоне моря старый кирпичный храм на возвышенности">
+                    width="350" height="430" loading="lazy" alt="На фоне моря старый кирпичный храм на возвышенности">
                 </picture>
               </div>
               <span class="places-card__country">Македония</span>
@@ -128,7 +137,7 @@
                   <source media="(max-width: 1023px)" srcset="./img/places/mobile/montenegro-mobile@1x.jpg 1x,
                   ./img/places/mobile/montenegro-mobile@2x.jpg 2x">
                   <img src="./img/places/montenegro-desktop@1x.jpg" srcset="./img/places/montenegro-desktop@2x.jpg 2x"
-                    width="350" height="430" alt="Русло горной реки берега которой утопают в зелени">
+                    width="350" height="430" loading="lazy" alt="Русло горной реки берега которой утопают в зелени">
                 </picture>
               </div>
               <span class="places-card__country">Черногория</span>
@@ -146,7 +155,7 @@
                   <source media="(max-width: 1023px)" srcset="./img/places/mobile/croatia-mobile@1x.jpg 1x,
                   ./img/places/mobile/croatia-mobile@2x.jpg 2x">
                   <img src="./img/places/croatia-desktop@1x.jpg" srcset="./img/places/croatia-desktop@2x.jpg 2x"
-                    width="350" height="430" alt="Красочная пещера с небольшим водоемом">
+                    width="350" height="430" loading="lazy" alt="Красочная пещера с небольшим водоемом">
                 </picture>
               </div>
               <span class="places-card__country">Хорватия</span>
@@ -208,7 +217,7 @@
                     <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
                     ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
                     <img src="./img/tabs/greece-tab-desktop@1x.jpg" srcset="./img/tabs/greece-tab-desktop@2x.jpg 2x"
-                      width="430" height="596" alt="Здания на вершине горы">
+                      width="430" height="596" loading="lazy" alt="Здания на вершине горы">
                   </picture>
                 </div>
                 <div class="tab-card__review review">
@@ -222,7 +231,7 @@
                         <source type="image/webp" srcset="./img/review/review-author-greece@1x.webp 1x,
                         ./img/review/review-author-greece@2x.webp 2x">
                         <img src="./img/review/review-author-greece@1x.jpg"
-                          srcset="./img/review/review-author-greece@2x.jpg 2x" width="64" height="81" alt="Фото автора">
+                          srcset="./img/review/review-author-greece@2x.jpg 2x" width="64" height="81" loading="lazy" alt="Фото автора">
                       </picture>
                     </div>
                     <span class="review__author-name">Влада Голицина</span>
@@ -257,7 +266,7 @@
                     <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
                     ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
                     <img src="./img/tabs/albania-tab-desktop@1x.jpg" srcset="./img/tabs/albania-tab-desktop@2x.jpg 2x"
-                      width="430" height="596" alt="Вид городка на пляже с высоты птичьего полета">
+                      width="430" height="596" loading="lazy" alt="Вид городка на пляже с высоты птичьего полета">
                   </picture>
                 </div>
                 <div class="tab-card__review review">
@@ -270,7 +279,7 @@
                         <source type="image/webp" srcset="./img/review/review-author-albania@1x.webp 1x,
                         ./img/review/review-author-albania@2x.webp 2x">
                         <img src="./img/review/review-author-albania@1x.jpg"
-                          srcset="./img/review/review-author-albania@2x.jpg 2x" width="64" height="81"
+                          srcset="./img/review/review-author-albania@2x.jpg 2x" width="64" height="81" loading="lazy"
                           alt="Фото автора">
                       </picture>
                     </div>
@@ -305,7 +314,7 @@
                     <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
                     ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
                     <img src="./img/tabs/macedonia-tab-desktop@1x.jpg"
-                      srcset="./img/tabs/macedonia-tab-desktop@2x.jpg 2x" width="430" height="596"
+                      srcset="./img/tabs/macedonia-tab-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="На фоне моря старый кирпичный храм на возвышенности">
                   </picture>
                 </div>
@@ -320,7 +329,7 @@
                         <source type="image/webp" srcset="./img/review/review-author-macedonia@1x.webp 1x,
                         ./img/review/review-author-macedonia@2x.webp 2x">
                         <img src="./img/review/review-author-macedonia@1x.jpg"
-                          srcset="./img/review/review-author-macedonia@2x.jpg 2x" width="64" height="81"
+                          srcset="./img/review/review-author-macedonia@2x.jpg 2x" width="64" height="81" loading="lazy"
                           alt="Фото автора">
                       </picture>
                     </div>
@@ -354,7 +363,7 @@
                     <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
                     ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
                     <img src="./img/tabs/montenegro-tab-desktop@1x.jpg"
-                      srcset="./img/tabs/montenegro-tab-desktop@2x.jpg 2x" width="430" height="596"
+                      srcset="./img/tabs/montenegro-tab-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="Русло горной реки берега которой утопают в зелени">
                   </picture>
                 </div>
@@ -368,7 +377,7 @@
                         <source type="image/webp" srcset="./img/review/review-author-montenegro@1x.webp 1x,
                         ./img/review/review-author-montenegro@2x.webp 2x">
                         <img src="./img/review/review-author-montenegro@1x.jpg"
-                          srcset="./img/review/review-author-montenegro@2x.jpg 2x" width="64" height="81"
+                          srcset="./img/review/review-author-montenegro@2x.jpg 2x" width="64" height="81" loading="lazy"
                           alt="Фото автора">
                       </picture>
                     </div>
@@ -403,7 +412,7 @@
                     <source media="(min-width: 320px)" srcset="./img/tabs/mobile/greece-tab-mobile@1x.jpg 1x,
                     ./img/tabs/mobile/greece-tab-mobile@2x.jpg 2x">
                     <img src="./img/tabs/croatia-tab-desktop@1x.jpg" srcset="./img/tabs/croatia-tab-desktop@2x.jpg 2x"
-                      width="430" height="596" alt="Красочная пещера с небольшим водоемом">
+                      width="430" height="596" loading="lazy" alt="Красочная пещера с небольшим водоемом">
                   </picture>
                 </div>
                 <div class="tab-card__review review">
@@ -417,7 +426,7 @@
                         <source type="image/webp" srcset="./img/review/review-author-croatia@1x.webp 1x,
                         ./img/review/review-author-croatia@2x.webp 2x">
                         <img src="./img/review/review-author-croatia@1x.jpg"
-                          srcset="./img/review/review-author-croatia@2x.jpg 2x" width="64" height="81"
+                          srcset="./img/review/review-author-croatia@2x.jpg 2x" width="64" height="81" loading="lazy"
                           alt="Фото автора">
                       </picture>
                     </div>
@@ -605,21 +614,6 @@
     </div>
   </div>
 </template>
-
-  <div class="page-grid">
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-    <div class="page-grid__col"></div>
-  </div>
   <script src="./js/main.min.js" type="module"></script>
 </body>
 

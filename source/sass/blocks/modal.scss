@@ -17,6 +17,7 @@
   width: 22px;
   height: 22px;
   background-color: transparent;
+  transition: transform 0.3s;
 
   &::before {
     top: 0;
@@ -26,6 +27,10 @@
     height: 22px;
     --icon-color: var(--c-text-secondary);
     mask-image: url("../../img/stack.svg#close-menu");
+  }
+
+  &:hover {
+    transform: rotate(360deg);
   }
 }
 

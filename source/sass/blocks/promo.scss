@@ -11,13 +11,13 @@
   grid-row: 1;
   grid-column: 1 / -1;
   min-height: 860px;
-  background-image: url("../../img/promo/promo-desktop.jpg");
+  background-image: image-set(url("../../img/promo/promo-desktop@2x.jpg") 2x, url("../../img/promo/promo-desktop@1x.jpg") 1x);
   background-color: var(--bg-promo);
   background-repeat: no-repeat;
 
   @media (max-width: 1023px) {
     min-height: 344px;
-    background-image: url("../../img/promo/promo-tablet.jpg");
+    background-image: image-set(url("../../img/promo/promo-tablet@2x.jpg") 2x, url("../../img/promo/promo-tablet@1x.jpg") 1x);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;

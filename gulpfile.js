@@ -87,6 +87,8 @@ exports.optimizeImages = optimizeImages;
 const createWebp = () => gulp.src([
   'source/img/**/*.{jpg,png}',
   '!source/img/favicons/*',
+  '!source/img/promo/**/*',
+  '!source/img/form/**/*',
 ])
   .pipe(webp({ quality: 90 }))
   .pipe(gulp.dest('build/img'));
