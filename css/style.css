@@ -887,7 +887,7 @@
 }
 
 .rates-card--fix .rates-card__item:first-child {
-  height: 59px;
+  line-height: 29.5px;
 }
 
 .rates-card__button {
